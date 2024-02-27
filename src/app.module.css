@@ -1,0 +1,22 @@
+.rteContainer{
+    width: 100vw;
+    height: 100%;
+    
+}
+
+.rteHeading{
+    text-align: center;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f2f1;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover{
+    background-color: #e0e0e0;
+}
