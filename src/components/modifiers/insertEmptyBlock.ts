@@ -46,5 +46,6 @@ export const insertEmptyBlock = (
       isBackward: false,
     }),
   });
+  // @ts-ignore
   return EditorState.push(editorState, newContentState, "split-block");
 };

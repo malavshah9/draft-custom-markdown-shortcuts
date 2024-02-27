@@ -18,8 +18,10 @@ export const changeCurrentBlockType = (
     focusOffset: 0,
   });
   const newContentState = currentContent.merge({
+    // @ts-ignore
     blockMap: blockMap.set(key, newBlock),
     selectionAfter: newSelection,
   });
+  // @ts-ignore
   return EditorState.push(editorState, newContentState, "change-block-type");
 };

@@ -33,6 +33,7 @@ export const createMarkdownShortcutsPlugin = (
     },
 
     handleReturn(ev, editorState) {
+      // @ts-ignore
       const newEditorState = checkReturnForState(editorState, ev, config);
       if (editorState !== newEditorState) {
         store.setEditorState?.(newEditorState);
@@ -76,6 +77,7 @@ export const createMarkdownShortcutsPlugin = (
           newEditorState = replaceText(newEditorState, buffer.join(""));
           const tmpEditorState = checkReturnForState(
             newEditorState,
+            // @ts-ignore
             {},
             config
           );

@@ -27,6 +27,7 @@ export const handleBlockType = (
   if (line.indexOf(`${sharps(1)} `) === 0 && blockType !== "code-block") {
     return changeCurrentBlockType(
       editorState,
+      // @ts-ignore
       blockTypes[1],
       line.replace(/^#+\s/, "")
     );
